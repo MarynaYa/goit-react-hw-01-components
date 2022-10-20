@@ -3,8 +3,7 @@
     margin-left: 40px;
     margin-bottom: 40px;
     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
-    border-radius: 2px;
-    margin: 0 auto;
+    border-radius: 2px; 
 }
 .description {
 text-align: center;
@@ -15,7 +14,7 @@ margin: 40px 20px;
 width: 250px;
 height: 250px;
 }
-.username {
+.name {
     font-weight: 700;
   font-size: 24px;
 }
@@ -41,9 +40,11 @@ li {
 
     padding: 10px 0;
   }
-  span {
-    font-style: inherit;
+  .quantity {
+    font-weight: bold;
   }
   .label {
-  font-style: bold;
+  color: red;
+  margin-bottom: 7px;
+  font-weight: bold;
   }
