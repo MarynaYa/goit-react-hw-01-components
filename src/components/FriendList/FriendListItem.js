@@ -8,9 +8,3 @@ return <li className={s.spanitem} key={id}>
  <p className={s.name}>{name}</p>
 </li>
 };
-
-FriendListenItem.propTypes = {
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.string.isRequired,
-}
