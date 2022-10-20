@@ -7,7 +7,7 @@ return  <section className={s.statistics}>
 
 <ul className={s.statList}>
   {stats.map(stat => (
-    <li className={s.item} key={stat.id}>
+    <li className={s.itemStat} key={stat.id}>
       <span className={s.label}>{stat.label}</span>
       <span className={s.percentage}>{stat.percentage}%</span>
     </li>
@@ -16,9 +16,13 @@ return  <section className={s.statistics}>
 </section>
 };
 
-Statistics.propTypes = {
-    title: PropTypes.string,
-    id: PropTypes.string,
-    label: PropTypes.string,
-    percentage: PropTypes.percentage,
-}
+Statistics.propTypes = {  
+    title: PropTypes.string,       
+    stats: PropTypes.arrayOf(
+      PropTypes.shape({
+      id: PropTypes.string, 
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+      }),
+    ),
+};

@@ -1,6 +1,21 @@
 import PropTypes from 'prop-types';
-import s from './Statistics.module.css';
+import s from './FriendList.module.css';
+import FriendListenItem from './FriendListItem';
 
-//<ul class="friend-list">
-// <!-- Произвольное кол-во FriendListItem -->
-//</ul>
+export default function FriendList({ friends }) {
+    return <ul className={s.friendList}>
+ {friends.map(({ id, avatar, name, isOnline }) => (
+    <FriendListenItem
+key={id}
+avatar={avatar}
+name={name}
+isOnline={isOnline}
+/>
+ )
+ )}
+</ul>
+};
+
+FriendList.propTypes = {
+friends: PropTypes.arrayOf().isRequired,
+}

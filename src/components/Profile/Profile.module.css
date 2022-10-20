@@ -30,7 +30,7 @@ color: darkgrey;
     padding: 0;
     margin-top: 0;
 }
-li {
+.item {
     display: flex;
     flex-direction: column;
     flex-basis: calc(100% / 3);
